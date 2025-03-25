@@ -6,14 +6,12 @@ about:
   image: img/profile.png
 ---
 
-:::{#me}
-
+::: {#me}
 ## Minecraft
 
 ## History
 
 ## Revenue
-
 :::
 
 Thanks for checking out my web site!

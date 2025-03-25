@@ -11,7 +11,7 @@
 
 
 
-<title>Projects</title>
+<title>README</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -348,19 +348,139 @@ display: none;
 
 
 
-<h1 class="title toc-ignore">Projects</h1>
 
 </div>
 
 
-<div id="dungeon" class="section level2">
-<h2>dungeon</h2>
+<div id="website-template" class="section level1">
+<h1>website-template</h1>
+<p><a href="https://youtu.be/YN75YXaLFGM">Video tutorial</a></p>
+<p>This is a template for creating a Quarto web site using RStudio.</p>
+<p>To use it effectively you need to know how to push and pull from
+GitHub to RStudio using the Git panel buttons, which requires a working
+GitHub personal access token (PAT). If you don’t have one setup,
+following <a href="https://happygitwithr.com/https-pat.html#tldr">these
+instructions</a> in <em>Happy Git and GitHub for the useR</em> to set
+one up. (In short you will create a token for HTTPS and store it using
+<strong>gitcreds</strong>.)</p>
+<p>In addition open RStudio and update to the latest version by clicking
+“Help” “Check for Updates”. (This is necessary to ensure that Quarto is
+installed.)</p>
+<div id="absolute-essentials" class="section level2">
+<h2>ABSOLUTE ESSENTIALS</h2>
+<p><em>If you have any difficulties or have feedback of any kind, please
+file an issue or communicate through <a href="https://github.com/jtr13/website-template/discussions">Discussions</a>.</em></p>
+<div id="copy-this-template-github" class="section level3">
+<h3>Copy this template (GitHub)</h3>
+<ul class="task-list">
+<li><label><input type="checkbox"></input>1. Click the green “Use this
+template” button above. (You need to login to GitHub to see this
+option). Choose the “Create a new repository” option. DO NOT FORK THE
+REPO. Choose a descriptive name for your repo based on your content.
+(Unlike when you fork a repo, you get to choose the name. If you change
+your mind before you do any work, delete your new repo and start over.)
+Leave the “Public” option checked or else GitHub Pages won’t
+work.</label></li>
+</ul>
 </div>
-<div id="seafood" class="section level2">
-<h2>seafood</h2>
+<div id="set-up-pages-github" class="section level3">
+<h3>Set up Pages (GitHub)</h3>
+<ul class="task-list">
+<li><p><label><input type="checkbox"></input>1. You’ve now left the template
+page and are viewing your new repo on GitHub. On the home page, click
+Settings. Click the “Pages” section on the left. In the <strong>Build
+and Deployment</strong> section, set <strong>Source</strong> to “Deploy
+from a branch” (Classic Pages experience) and <strong>Branch</strong> to
+<strong>main</strong> with <strong>/docs</strong> folder. Click
+Save.</label></p></li>
+<li><p><label><input type="checkbox"></input>2. Click the little gear button
+near “About” on the top right side of the home page of the repo and
+check the “Use your Github Pages website” box under “Website”. Click
+“Save changes”. Test the link and you should see a web site with a stick
+figure on it. It may take a few minutes to build so if it’s not working
+do a few more steps and then come back to check.</label></p></li>
+</ul>
 </div>
-<div id="project-3" class="section level2">
-<h2>Project 3</h2>
+<div id="copy-the-repo-link-github" class="section level3">
+<h3>Copy the repo link (GitHub)</h3>
+<ul class="task-list">
+<li><label><input type="checkbox"></input>1. Click the green Code button,
+choose “HTTPS” and copy the link below. It should have the format:
+<code>https://github.com/[USERNAME]/[REPO NAME].git</code></label></li>
+</ul>
+</div>
+<div id="clone-the-repo-rstudio" class="section level3">
+<h3>Clone the repo (RStudio)</h3>
+<ul class="task-list">
+<li><label><input type="checkbox"></input>1. Clone your new repo with
+<em>File, New Project…, Version Control, Git</em> in RStudio. You will
+need to paste the link from the previous step in the Repository URL box.
+If it’s not automatically populated, enter the repo name in the “Project
+directory name:” box. Choose the location of the project</label></li>
+</ul>
+</div>
+<div id="edit-_quarto.yml-rstudio" class="section level3">
+<h3>Edit <code>_quarto.yml</code> (RStudio)</h3>
+<p>Tip: From the file pane in RStudio, open <code>README.md</code>,
+which contains these instructions. You can delete steps as you complete
+them.</p>
+<ul class="task-list">
+<li><label><input type="checkbox"></input>1. Edit the all caps info in
+<code>_quarto.yml</code> to your info. It’s very important to maintain
+the indenting structure in this file precisely as is – be
+careful!</label></li>
+</ul>
+</div>
+<div id="render-the-web-site-rstudio" class="section level3">
+<h3>Render the web site (RStudio)</h3>
+<ul class="task-list">
+<li><p><label><input type="checkbox"></input>1. If you haven’t already, click
+“Help” “Check for Updates” to make sure you have the latest version of
+RStudio (and thus have Quarto installed.)</label></p></li>
+<li><p><label><input type="checkbox"></input>2. Render the web site locally by
+clicking the “Build” tap on the right and then “Render
+Website”.</label></p></li>
+<li><p><label><input type="checkbox"></input>3. Use
+<code>browseURL(&quot;docs/index.html&quot;)</code> to view your site locally (or
+just open <code>docs/index.html</code> in a browser).</label></p></li>
+<li><p><label><input type="checkbox"></input>4. If it looks good, commit and
+push all changed files to GitHub.</label></p></li>
+</ul>
+<p>(You will need to repeat steps 2 and 4 every time you wish to update
+the book online.)</p>
+</div>
+<div id="next-steps" class="section level3">
+<h3>Next steps</h3>
+<ul>
+<li><p>Add content to <code>index.qmd</code> as desired.</p></li>
+<li><p>Add content to <code>projects.qmd</code> as desired.</p></li>
+<li><p>Change the photo in the <code>img</code> folder to your
+photo.</p></li>
+<li><p>Choose a theme from <a href="https://bootswatch.com/">https://bootswatch.com/</a> and replace
+“cerulean” in <code>_quarto.yml</code> with your prefered
+theme.</p></li>
+<li><p>Add additional tabs/sections by creating new <code>.qmd</code>
+files and listing them in <code>_quarto.yml</code> under
+<code>projects.qmd</code>.</p></li>
+</ul>
+</div>
+<div id="additional-features" class="section level3">
+<h3>Additional features</h3>
+<p>Please consult the official guide to <strong>quarto</strong> web
+sites: <a href="https://quarto.org/docs/websites/">https://quarto.org/docs/websites/</a></p>
+</div>
+<div id="last-but-not-least" class="section level3">
+<h3>Last but not least</h3>
+<p>Once you’ve completed these steps, delete the content of this
+<strong>README</strong> and add a short description of your project with
+a link to the book URL. It would be appreciated if you add the following
+to the end:</p>
+<p><em>This repo was initially generated from a Quarto template
+available here: <a href="https://github.com/jtr13/website-template" class="uri">https://github.com/jtr13/website-template</a>.</em></p>
+<p>(If you found this helpful, please let us know by starring the repo.
+⭐ 😄)</p>
+</div>
+</div>
 </div>
 
 

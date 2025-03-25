@@ -16,8 +16,15 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "About Me",
+    "title": "About Minecraft Games",
     "section": "",
     "text": "Thanks for checking out my web site!"
+  },
+  {
+    "objectID": "projects.html#seafood",
+    "href": "projects.html#seafood",
+    "title": "Projects",
+    "section": "seafood",
+    "text": "seafood"
   }
 ]
