@@ -1,5 +1,5 @@
 ---
-title: "About Minecraft"
+title: "About Minecraft Games"
 about:
   id: me
   template: broadside
@@ -8,11 +8,11 @@ about:
 
 :::{#me}
 
-## Goals
+## Minecraft
 
-## Education
+## History
 
-## Experience
+## Revenue
 
 :::
 
